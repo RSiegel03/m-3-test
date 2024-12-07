@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     author: 'Diogenes Teufelsdröckh',
     description: 'Transcendentalist musings on the future of robots',
-    siteUrl: 'https://knightjdr.github.io/gatsby-starter-scientist',
+    siteUrl: 'https://RSiegel03.github.io/gatsby-starter-scientist',
     title: 'Teufelsdröckh laboratory',
     // List of link buttons to include on the landing image. Delete this field
     // and/or all entires if you do not want these links.
