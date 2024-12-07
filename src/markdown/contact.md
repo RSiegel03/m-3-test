@@ -1,6 +1,7 @@
-Diogenes Teufelsdröckh, Professor of "Things in General" \
-[diogenes@wnw.edu](mailto:diogenes@weissnichtwo.edu)
+David Bernstein, Assistant Professor, Department of Electrical and Biomedical Engineering \
+[David.Bernstein@uvm.edu](mailto:david.bernstein@uvm.edu)
 
-Weissnichtwo University\
-Weissnichtwo, Germany\
+The University of Vermont\
+Burlington, VT\
 tel: (xxx) xxxx-xxxx
+

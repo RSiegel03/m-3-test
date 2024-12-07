@@ -1,16 +1,16 @@
 module.exports = {
-  // pathPrefix: '/gatsby-starter-scientist',
+   pathPrefix: '/gatsby-starter-scientist',
   siteMetadata: {
-    author: 'Diogenes Teufelsdröckh',
-    description: 'Transcendentalist musings on the future of robots',
+    author: 'David Bernstein',
+    description: 'Modeling and Analysis of the Human Gut Microbiome',
     siteUrl: 'https://RSiegel03.github.io/gatsby-starter-scientist',
-    title: 'Teufelsdröckh laboratory',
+    title: 'Microbiome Metabolic Modeling Lab',
     // List of link buttons to include on the landing image. Delete this field
     // and/or all entires if you do not want these links.
     // options: 'contact', 'opportunities', 'people', 'publications', 'research'
     primaryLinks: [
-      'research',
-      'opportunities',
+      'Research',
+      'Opportunities',
     ],
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
@@ -25,8 +25,8 @@ module.exports = {
     // it will not be shown. Delete this field and/or all entires to disable
     // footer links.
     footerLinks: [
-      { text: 'GitHub', link: 'https://github.com/knightjdr' },
-      { text: 'Google Scholar', link: 'https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ' },
+      { text: 'GitHub', link: 'https://github.com/m-3-lab' },
+      { text: 'University of Vermont', link: 'https://www.uvm.edu/cems/ebe/profile/david-bernstein' },
       { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },
     ],
   },

@@ -17,9 +17,7 @@ const Landing = ({
   >
     <div>
       <h1>
-        The Lab of Dr.
-        {' '}
-        {author}
+        Microbiome Metabolic Modeling Lab
       </h1>
       <p className="home__landing-description">
         {description}
