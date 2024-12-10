@@ -3,6 +3,5 @@ David Bernstein, Assistant Professor, Department of Electrical and Biomedical En
 
 The University of Vermont\
 Burlington, VT\
-Lab: [Insert Room of Lab Here]
-Office: Votey 309B?
+tel: (xxx) xxxx-xxxx
 
