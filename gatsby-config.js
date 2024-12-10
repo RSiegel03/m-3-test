@@ -15,10 +15,10 @@ module.exports = {
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
     publications: [
-      31217594,
-      30554943,
-      29395067,
-      24255178,
+      34904863,
+      33602294,
+      37888487,
+      36802169
     ],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
