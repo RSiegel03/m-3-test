@@ -1,9 +1,9 @@
 module.exports = {
-   pathPrefix: '/gatsby-starter-scientist',
+   pathPrefix: '/m-3-test',
   siteMetadata: {
     author: 'David Bernstein',
     description: 'Modeling and Analysis of the Human Gut Microbiome',
-    siteUrl: 'https://RSiegel03.github.io/gatsby-starter-scientist',
+    siteUrl: 'https://RSiegel03.github.io/',
     title: 'Microbiome Metabolic Modeling Lab',
     // List of link buttons to include on the landing image. Delete this field
     // and/or all entires if you do not want these links.

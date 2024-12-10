@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-scientist",
+  "name": "m-3-test",
   "private": false,
   "description": "A starter template for scientists",
   "version": "0.1.0",
-  "author": "James Knight <knightjdr@gmail.com>",
+  "author": "David Bernstein <David.Bernstein@uvm.edu>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -66,9 +66,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/knightjdr/gatsby-starter-scientist"
+    "url": "https://github.com/RSiegel03/m-3-test"
   },
   "bugs": {
-    "url": "https://github.com/knightjdr/gatsby-starter-scientist/issues"
+    "url": "https://github.com/RSiegel03/m-3-test"
   }
 }
