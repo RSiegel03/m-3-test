@@ -9,7 +9,7 @@ const getLinks = (links) => {
     people: (
       <Link key="people" to="/people">
         <FontAwesomeIcon icon={faUsers} />
-        People
+        Our Team
       </Link>
     ),
     publications: (
