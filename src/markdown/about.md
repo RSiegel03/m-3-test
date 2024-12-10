@@ -1,5 +1,5 @@
 ---
-image: ../images/portrait.png
+image: ../images/dbernstein.png
 title: About David Bernstein
 ---
 
