@@ -1,6 +1,6 @@
 ---
 image: ../images/dbernstein.png
-title: About David Bernstein
+title: About Dr. David Bernstein
 ---
 
 Computational Biology, Systems Biology, Genome-Scale Metabolic Modeling, Microbiome, Machine Learning.

@@ -1,20 +1,11 @@
 There are openings at several levels in the laboratory.
 
-### Postdoctoral
+### Graduate Research Assistants
+#### We Currently Have 3
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Odio aenean sed adipiscing diam donec
-adipiscing.
+[Insert Description for getting more GRAs?]
 
-### Graduate students
+### Undergraduate Research Assistants 
+#### We Currently Have 2 
 
-Adipiscing enim eu turpis egestas pretium aenean pharetra. Pretium
-lectus quam id leo in vitae turpis massa sed. Sed viverra ipsum nunc aliquet
-bibendum enim facilisis.
-
-### Research associates
-
-Velit scelerisque in dictum non. In metus vulputate eu
-scelerisque. Ipsum dolor sit amet consectetur adipiscing elit duis. Nec ullamcorper
-sit amet risus nullam eget felis eget. Congue mauris rhoncus aenean vel elit
-scelerisque.
+[Insert Description for getting more UGRAs?]
