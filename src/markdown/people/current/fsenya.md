@@ -1,6 +1,6 @@
 ---
 email: blumine@wnw.edu
-image: ../../images/people/fsenya.png
+image: ../../../images/people/fsenya.png
 name: Frederick Senya
 order: 4
 title: Graduate Research Assistant

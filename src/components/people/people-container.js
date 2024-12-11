@@ -9,7 +9,7 @@ const PeopleContainer = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        markdown: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/people/" } }) {
+        markdown: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/people/current/" } }) {
           edges {
             node {
               html
