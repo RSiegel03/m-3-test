@@ -1,4 +1,5 @@
 import React from 'react';
+import './alumni-table.css';
 
 const AlumniTable = ({ alumni }) => {
   // Function to parse URLs and return an array of <a> elements
@@ -30,36 +31,37 @@ const AlumniTable = ({ alumni }) => {
   return (
     <div>
       <h2>Our Alumni</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Graduation Year</th>
-            <th>Publications</th>
-            <th>Current Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          {alumni.length > 0 ? (
-            alumni.map((alumnus, index) => {
-              const { name, graduationYear, publications, currentPosition } = alumnus;
 
-              return (
-                <tr key={index}>
-                  <td>{name}</td>
-                  <td>{graduationYear || 'N/A'}</td>
-                  <td>{publications || 'N/A'}</td>
-                  <td>{renderCurrentPositionLinks(currentPosition)}</td>
-                </tr>
-              );
-            })
-          ) : (
-            <tr>
-              <td colSpan="4">No alumni data available</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+      <table className="alumni-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Graduation Year</th>
+          <th>Publications</th>
+          <th>Current Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        {alumni.length > 0 ? (
+          alumni.map((alumnus, index) => {
+            const { name, graduationYear, publications, currentPosition } = alumnus;
+
+            return (
+              <tr key={index}>
+                <td>{name}</td>
+                <td>{graduationYear || 'N/A'}</td>
+                <td>{publications || 'N/A'} </td>
+                <td>{renderCurrentPositionLinks(currentPosition)}</td>
+              </tr>
+            );
+          })
+        ) : (
+          <tr>
+            <td colSpan="4">No alumni data available</td>
+          </tr>
+        )}
+      </tbody>
+    </table>
     </div>
   );
 };

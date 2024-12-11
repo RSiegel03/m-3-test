@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from '../../components/layout/layout';
 import SEO from '../../components/seo/seo';
 import PeopleContainer from '../../components/people/people-container';
+import AlumniTable from '../../components/people/alumni-table';
 
 const IndexPage = ({ data }) => (
   <Layout>
