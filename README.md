@@ -26,7 +26,7 @@ git clone https://github.com/[your-user-name]/gatsby-starter-scientist.git
 
 4. Move into project directory and install dependencies.
 ```
-cd gatsby-starter-scientist
+cd m-3-lab-site // or wherever you are storing the repo with whatever name
 npm install
 ```
 
@@ -74,6 +74,21 @@ Basic configuration for the site is found in the `siteMetadata` object in this f
 If the starting page for your site will have a path prefix, for example `https://mysite.org/path-prefix`, be sure to uncomment the `pathPrefix` field in this file and add in the correct prefix. If it will not have a prefix, for example `https://mysite.org`, delete this field. If you are hosting on Github as described above, your site will have a path prefix which is the name of the repository (`gatsby-starter-scientist` if you have not changed the name.)
 
 Do not change any of the other fields in this file.
+
+This document holds a lot of metadata for the site, including URL information, title and descriptions, author, and more.
+
+The author variable can be changed, but for the M-3 Lab, should remain as our Wonderful PI David!
+
+The description is then what follows the website title, which is stored in the variable "title", and changes the name of the site in the browser tab. 
+
+THe path URL should also be changed to match the M-3 Lab repo 
+Change the path prefix to the name you wish to keep with the site (i kept it as the same name of the repo)
+
+You may also go to the PubMed website (https://pubmed.ncbi.nlm.nih.gov/) to find and then add the research links is the respective spot. The site will then automatically link them and cite them, and cluster/categorize them by year.
+
+You can also add links at the footer of the site. I included the Github for the lab site, the UVM website for Dr. Bernstein, and then there is a link to LinkedIn, i kept the original, but whatever works! 
+
+The rest of the document is just metadata for necessaary site components
 
 ### Background/landing image
 
