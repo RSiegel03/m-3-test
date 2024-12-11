@@ -43,7 +43,11 @@ const PeopleContainer = () => {
                 name
                 graduationYear
                 publications
-                currentPosition
+                currentPosition {
+                  description
+                  linkText
+                  linkUrl
+               }
               }
             }
           }
@@ -52,15 +56,14 @@ const PeopleContainer = () => {
     `
   );
 
-  // Log the data fetched from GraphQL to ensure it's being retrieved
-  console.log('Current People:', query.currentPeople.edges);
-  console.log('Alumni:', query.alumni.edges);
+
 
   // Sorting current people
   const currentPeople = sortMarkdown(query.currentPeople.edges, ['order', 'name']);
   
   // Extracting alumni data
   const alumni = query.alumni.edges.map(({ node }) => node.frontmatter);
+
 
   return (
     <>

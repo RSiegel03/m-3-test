@@ -48,7 +48,11 @@ export const query = graphql`
             name
             graduationYear
             publications
-            currentPosition
+            currentPosition {
+              description
+              linkText
+              linkUrl
+            }
           }
         }
       }

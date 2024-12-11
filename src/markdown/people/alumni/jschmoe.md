@@ -1,6 +1,9 @@
 ---
 name: Joe Schmoe
-graduationYear: 2020
-publications: "Doe et al., AI Journal, 2019"
-currentPosition: "Assistant Professor at XYZ University"
+graduationYear: 2022
+publications: "Schmoe et al., AI Journal, 202002"
+currentPosition: 
+  - description: "View "
+    linkText: "Github"
+    linkUrl: "https://github.com/RSiegel03"
 ---

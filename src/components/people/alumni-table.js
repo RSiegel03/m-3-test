@@ -1,41 +1,67 @@
 import React from 'react';
 
-const AlumniTable = ({ alumni }) => (
-  <div>
-    <h2>Our Alumni</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Graduation Year</th>
-          <th>Publications</th>
-          <th>Current Position</th>
-        </tr>
-      </thead>
-      <tbody>
-        {alumni.map((alumnus, index) => {
-          const { frontmatter } = alumnus;  // Destructure to avoid errors
-          
-          // Add a check to make sure frontmatter is defined
-          if (!frontmatter) {
-            console.error(`Alumnus at index ${index} is missing frontmatter`);
-            return null;  // Skip rendering this row if frontmatter is undefined
-          }
+const AlumniTable = ({ alumni }) => {
+  // Function to parse URLs and return an array of <a> elements
+  const renderCurrentPositionLinks = (currentPosition) => {
+    if (!currentPosition || currentPosition.length === 0) {
+      return <span>No current position available</span>;
+    }
+  
+    return currentPosition.map((position, index) => {
+      const { description, linkText, linkUrl } = position;
+  
+      return (
+        <React.Fragment key={index}>
+          {description && <span>{description} </span>}
+          {linkUrl && (
+            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+              {linkText || linkUrl} {/* Display linkText or fallback to the URL */}
+            </a>
+          )}
+          {index < currentPosition.length - 1 && <span>, </span>} {/* Add a comma between entries */}
+        </React.Fragment>
+      );
+    });
+  };
+  
+  
+  
 
-          const { name, graduationYear, publications, currentPosition } = frontmatter;
+  return (
+    <div>
+      <h2>Our Alumni</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Graduation Year</th>
+            <th>Publications</th>
+            <th>Current Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          {alumni.length > 0 ? (
+            alumni.map((alumnus, index) => {
+              const { name, graduationYear, publications, currentPosition } = alumnus;
 
-          return (
-            <tr key={name}>
-              <td>{name}</td>
-              <td>{graduationYear || 'N/A'}</td>
-              <td>{publications || 'N/A'}</td>
-              <td>{currentPosition || 'N/A'}</td>
+              return (
+                <tr key={index}>
+                  <td>{name}</td>
+                  <td>{graduationYear || 'N/A'}</td>
+                  <td>{publications || 'N/A'}</td>
+                  <td>{renderCurrentPositionLinks(currentPosition)}</td>
+                </tr>
+              );
+            })
+          ) : (
+            <tr>
+              <td colSpan="4">No alumni data available</td>
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  </div>
-);
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default AlumniTable;
