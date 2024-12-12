@@ -1,0 +1,135 @@
+/* Alumni Table Styling for Gatsby Starter Scientist Theme */
+/* Previous table styles remain the same */
+
+.alumni-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #dee2e6;
+  text-align: left;
+  
+  /* Typography consistent with scientific/academic themes */
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.alumni-header h1 {
+  color: var(--color-font);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.alumni-header p {
+  color: var(--color-font); 
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
+.alumni-table {
+  align-items: center;
+  width: 75%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 2rem;
+  
+  /* Typography often used in scientific/academic themes */
+  font-family: var(--font-secondary);
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.alumni-table thead {
+  background-color: var(--color-primary);
+  border-bottom: 10px solid #dee60f;
+}
+
+.alumni-table th {
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-background);
+  border-bottom: 2px solid #dee2e6;
+}
+
+.alumni-table td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.alumni-table tr:hover {
+  background-color: rgba(0, 123, 255, 0.075); /* Soft blue highlight on hover */
+  transition: background-color 0.2s ease;
+}
+
+/* Alternate row coloring for improved readability */
+.alumni-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  .alumni-header {
+    text-align: center;
+  }
+  
+  .alumni-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .alumni-header p {
+    font-size: 0.95rem;
+  }
+
+  .alumni-table, 
+  .alumni-table tbody, 
+  .alumni-table tr, 
+  .alumni-table td {
+    display: block;
+  }
+  
+  .alumni-table thead {
+    display: none;
+  }
+  
+  .alumni-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .alumni-table td {
+    text-align: right;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  .alumni-table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.75rem;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+  }
+}
+
+/* Responsive typography adjustment */
+@media screen and (max-width: 480px) {
+  .alumni-table {
+    font-size: 0.85rem;
+  }
+}
