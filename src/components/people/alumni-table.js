@@ -1,5 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import './alumni-table.css';
+import './people.css';
 
 const AlumniTable = ({ alumni }) => {
   // Function to parse URLs and return an array of <a> elements
@@ -25,43 +28,47 @@ const AlumniTable = ({ alumni }) => {
     });
   };
   
-  
-  
-
   return (
-    <div>
-      <h2>Our Alumni</h2>
+    <div className="alumni-header">
+      <section>
+        <header>
+         <h1>
+          Alumni Directory
+        </h1>
+        <p>A comprehensive list of our distinguished graduates</p>
+        </header>
+      </section>
 
       <table className="alumni-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Graduation Year</th>
-          <th>Publications</th>
-          <th>Current Position</th>
-        </tr>
-      </thead>
-      <tbody>
-        {alumni.length > 0 ? (
-          alumni.map((alumnus, index) => {
-            const { name, graduationYear, publications, currentPosition } = alumnus;
-
-            return (
-              <tr key={index}>
-                <td>{name}</td>
-                <td>{graduationYear || 'N/A'}</td>
-                <td>{publications || 'N/A'} </td>
-                <td>{renderCurrentPositionLinks(currentPosition)}</td>
-              </tr>
-            );
-          })
-        ) : (
+        <thead>
           <tr>
-            <td colSpan="4">No alumni data available</td>
+            <th>Name</th>
+            <th>Graduation Year</th>
+            <th>Publications</th>
+            <th>Current Position</th>
           </tr>
-        )}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {alumni.length > 0 ? (
+            alumni.map((alumnus, index) => {
+              const { name, graduationYear, publications, currentPosition } = alumnus;
+
+              return (
+                <tr key={index}>
+                  <td>{name}</td>
+                  <td>{graduationYear || 'N/A'}</td>
+                  <td>{publications || 'N/A'} </td>
+                  <td>{renderCurrentPositionLinks(currentPosition)}</td>
+                </tr>
+              );
+            })
+          ) : (
+            <tr>
+              <td colSpan="4">No alumni data available</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 };
